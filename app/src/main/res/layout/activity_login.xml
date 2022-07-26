@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:gravity="center"
+    android:scrollbarStyle="outsideOverlay">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingTop="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:paddingBottom="@dimen/_15sdp">
+
+        <EditText
+            android:id="@+id/etCRN"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:autofillHints="emailAddress"
+            android:background="@drawable/bg_edt_gray"
+            android:ellipsize="end"
+            android:hint="@string/hint_crn"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:singleLine="true"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/_11ssp" />
+
+        <requestFocus />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/bg_edt_gray">
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toStartOf="@+id/tvForgot"
+                android:autofillHints="password"
+                android:background="@null"
+                android:ellipsize="end"
+                android:hint="@string/hint_password"
+                android:inputType="textPassword"
+                android:maxLength="10"
+                android:paddingStart="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_10sdp"
+                android:singleLine="true"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_11ssp" />
+
+            <TextView
+                android:id="@+id/tvForgot"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:background="?selectableItemBackground"
+                android:gravity="center"
+                android:paddingEnd="@dimen/_12sdp"
+                android:text="@string/forgot"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/btn_blue"
+            android:text="@string/login"
+            android:textSize="@dimen/_11ssp"
+            android:translationZ="@dimen/_10sdp" />
+
+    </LinearLayout>
+</ScrollView>

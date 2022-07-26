@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Template</string>
+    <string name="hint_crn">CRN</string>
+    <string name="hint_password">Password</string>
+    <string name="forgot">Forgot?</string>
+    <string name="login">Login</string>
+    <string name="enter_crn">Please enter CRN</string>
+<!--    <string name="enter_valid_email">Please enter valid email address</string>-->
+    <string name="enter_password">Please enter password</string>
+    <string name="enter_valid_password">Password should be minimum 6 characters long</string>
+</resources>
